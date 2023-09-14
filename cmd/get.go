@@ -4,12 +4,13 @@ import (
 	"context"
 	"flag"
 	"fmt"
+	"path/filepath"
+
 	"github.com/spf13/cobra"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"
-	"path/filepath"
 	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
 )
 
@@ -93,7 +94,6 @@ to quickly create a Cobra application.`,
 
 		}
 
-		//pod := "cloud-cost-exporter-75b5bb6666-l7zjc"
 		//_, err = clientset.CoreV1().Pods(namespace).Get(context.TODO(), pod, v1.GetOptions{})
 
 		/*
