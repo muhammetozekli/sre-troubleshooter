@@ -48,7 +48,6 @@ to quickly create a Cobra application.`,
 		// Examples for error handling:
 		// - Use helper functions like e.g. errors.IsNotFound()
 		// - And/or cast to StatusError and use its properties like e.g. ErrStatus.Message
-		//namespace := "platform"
 
 		namespaces, err := clientset.CoreV1().Namespaces().List(context.TODO(), v1.ListOptions{})
 		if err != nil {
